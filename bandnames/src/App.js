@@ -1,11 +1,14 @@
+import { BandList } from './components/BandList';
+import { BandAdd } from './components/BandAdd';
+
 function App() {
   return (
     <div className="container">
       <div className="alert">
         <p>
           Service status:
-          <span className="text-success">Online</span>
-          <span className="text-danger">Offline</span>
+          <span className="text-success"> Online</span>
+          <span className="text-danger"> Offline</span>
         </p>
       </div>
 
@@ -14,10 +17,10 @@ function App() {
 
       <div className="row">
         <div className="col-8">
-          Band list
+          <BandList />
         </div>
         <div className="col-4">
-          Band list
+          <BandAdd />
         </div>
       </div>
 
