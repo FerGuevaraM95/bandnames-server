@@ -19,7 +19,7 @@ class BandList {
   };
 
   removeBand(id) {
-    this.bands.filter(band => band.id !== id);
+    this.bands = this.bands.filter(band => band.id !== id);
   };
 
   getBands() {
