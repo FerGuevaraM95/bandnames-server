@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react';
 
-export function BandList({data, vote, deleteBand}) {
+export function BandList({data, vote, deleteBand, changeSocketName}) {
 
   const [bands, setBands] = useState(data);
 
@@ -21,10 +21,7 @@ export function BandList({data, vote, deleteBand}) {
   };
 
   const onLostFocus = (id, name) => {
-    console.log({id, name});
-
-    // TODO Emmit socket
-
+    changeSocketName(id, name);
   }
 
   const createRows = () => {
