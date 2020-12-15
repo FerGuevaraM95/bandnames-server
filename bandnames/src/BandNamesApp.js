@@ -1,10 +1,10 @@
 import {SocketProvider} from './context/SocketContext';
-import App from './App';
+import HomePage from './Pages/HomePage';
 
 export const BandNames = () => {
   return (
     <SocketProvider>
-      <App />
+      <HomePage />
     </SocketProvider>
   );
 }
