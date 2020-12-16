@@ -31,7 +31,7 @@ function HomePage() {
           <BandList />
         </div>
         <div className="col-4">
-          {/* <BandAdd /> */}
+          <BandAdd />
         </div>
       </div>
     </div>

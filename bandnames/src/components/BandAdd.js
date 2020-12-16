@@ -1,11 +1,10 @@
-import { useState } from "react";
-
-import { useSocket } from "../hooks/useSocket";
+import { useState, useContext } from "react";
+import { SocketContext } from '../context/SocketContext';
 
 export function BandAdd() {
   const [value, setValue] = useState("");
 
-  const {socket} = useSocket("http://localhost:8080");
+  const {socket} = useContext(SocketContext);
 
   const onSubmit = (e) => {
     e.preventDefault();
